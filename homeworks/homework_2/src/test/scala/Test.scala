@@ -42,11 +42,11 @@ object Test extends TestSuite {
             val vec4 = Exercises.Vector2D(2, 2)
 
 
-            assert(Exercises.sumScalars(vec1, vec2, vec3, vec4) == 4.0) // 0 + 4 = 4
-            assert(Exercises.sumScalars(vec1, vec1, vec2, vec2) == 2.0) // 1 + 1 = 2
+            assert(Exercises.sumScalars(vec1, vec2, vec3, vec4) == 4.0)
+            assert(Exercises.sumScalars(vec1, vec1, vec2, vec2) == 2.0)
 
-            assert(math.abs(Exercises.sumCosines(vec1, vec2, vec3, vec4) - 1.0) < 0.0001) // 0 + 1 = 1
-            assert(Exercises.sumCosines(vec1, vec1, vec2, vec2) == 2.0) // 1 + 1 = 2
+            assert(math.abs(Exercises.sumCosines(vec1, vec2, vec3, vec4) - 1.0) < 0.0001)
+            assert(Exercises.sumCosines(vec1, vec1, vec2, vec2) == 2.0)
         }
 
         'test_sortByHeavyweight - {
